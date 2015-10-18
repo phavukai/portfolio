@@ -9,6 +9,10 @@ class PortfolioController < ApplicationController
     @time = current_time
   end
 
+def index
+@current_page = current_page
+end
+
   private
 
   def current_page

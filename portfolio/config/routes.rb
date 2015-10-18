@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   
  
   root 'pages#welcome'
-	get '/portfolio' => 'portfolio#index'
+	get '/index' => 'portfolio#index'
+	get '/index2' => 'portfolio#index2'
+	get '/index3' => 'portfolio#index3'
   get '/about' => 'portfolio#about'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
