@@ -30,7 +30,7 @@ html, body {
     /* Style your earth */
     position: absolute;
     top: 35%;
-    left 25%;
+    left: 25%;
     
        border-color: blue;
   border-width: 1px;
@@ -44,7 +44,7 @@ html, body {
     margin-top: -25px;
 }
 
-#moon {
+.moon {
    position: absolute;
     top: 45%;
     left 35%; 
@@ -62,7 +62,7 @@ html, body {
     
 }
 
-#moon-orbit {
+.moon-orbit {
     /* For Section #2 */
     position: absolute;
     top: 45%;
@@ -85,7 +85,7 @@ html, body {
           animation: spin-right 10s linear infinite;
 }
 
-#earth-orbit {
+.earth-orbit {
     /* For Section #2 */
     position: absolute;
     top: 50%;
