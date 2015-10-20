@@ -16,7 +16,9 @@
 //
 // BASE STYLE
 //
-html, body {
+html,
+
+ body {
     /* The universe takes up all available space */
     width: 100%;
     height: 100%;
@@ -25,7 +27,7 @@ html, body {
     background-color: black;
 }
 
-#sun {
+.sun {
     position: absolute;
     /* Positions the top-left corner of the image to be *
     /* in the middle of the box */
@@ -44,17 +46,17 @@ html, body {
   box-shadow: 0 0 64px yellow;
 }
 
-#earth {
+.earth {
     /* Style your earth */
     position: absolute;
     top: 35%;
     left: 25%;
     
-       border-color: blue;
+  border-color: blue;
   border-width: 1px;
   border-style: solid;
   border-radius: 50%;
-    box-shadow: 0 0 64px blue;
+  box-shadow: 0 0 64px blue;
     
       height: 50px;
     width: 50px;
