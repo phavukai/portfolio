@@ -3,26 +3,15 @@
 <head>
   <title>Portfolio</title>
   <%= csrf_meta_tags %>
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag    'application', params[:controller], media: 'all', 'data-turbolinks-track' => true%>
+ <%= stylesheet_link_tag    'application', params[:controller], media: 'all', 'data-turbolinks-track' => true%>
+
+
 </head>
 <body>
-<div class="site-wrapper">
-
-  <div class="site-wrapper-inner">
-
-    <div class="cover-container">
       <%= render 'partials/header'%>
-      <div class="main-page-content">
         <%= yield %>
-      </div>
-   <%= render 'partials/footer'%> 
+<%= render 'partials/footer'%> 
 
-    </div>
-
-  </div>
-
-</div>
 
 </body>
 <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300,700' rel='stylesheet' type='text/css'>
