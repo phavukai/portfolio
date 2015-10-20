@@ -1,1 +1,3 @@
-Rails.application.config.assets.precompile += %w ( index2.css )
+%w( pages portfolio ).each do |controller|
+Rails.application.config.assets.precompile += ["#{controller}.js", "#{controller}.css"]
+end
