@@ -1,85 +1,140 @@
-// Place all the styles related to the portfolio controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-    background-color: #D6D6C2;
-    }
+//
+// BASE STYLE
+//
 
-div {
-	
-	display: inline-block;
-	height: 100px;
-	width: 100px;
-	border-radius: 100%;
-	border: 2px solid black;
-	margin-left: 20px;
-	margin-top: 200px;
-	margin-right: 20px;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	
-	
+ body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+    
+    /* The universe is black */
+    background-color: black;
 }
 
-div p {
-	position: relative;
-	margin-top: 40px;
-	font-size: 12px;
-	font-family: Verdana;
+.sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    
+    /* Play with these numbers to see what it does */
+    height: 200px;
+    width: 200px;
+    margin-top: -100px; 
+    margin-left: -100px;
+     border-color: orange;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  box-shadow: 0 0 64px yellow;
 }
 
-#eka {
-    border: 5px Solid red;
+.earth {
+    /* Style your earth */
+    position: absolute;
+    top: 35%;
+    left: 25%;
     
+  border-color: blue;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  box-shadow: 0 0 64px blue;
     
-    }
- #eka:hover {
-     box-shadow: 0 0 64px red;
-     
-     }   
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
 
-#toinen {
-    border: 5px solid #FF4747;
-     
-    }
-#toinen:hover {
-    box-shadow: 0 0 64px #FF4747;
-     
-    }    
+.moon {
+   position: absolute;
+   top: 45%;
+   left: 35%; 
     
- #kolmas {
-     border: 5px solid #B8E62E;
-     
-     }
-     
-#kolmas:hover {
-     box-shadow: 0 0 64px #B8E62E;
-     
-     }
-     
-#neljäs {
-    border: 5px solid #99FF33;
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  box-shadow: 0 0 64px gray;
     
-    }
- #neljäs:hover {
-    box-shadow: 0 0 64px #99FF33;
+    height: 20px;
+    width: 20px;
+    margin-left: -35px;
+    margin-top: -25px;
     
-    }   
-    
-#viides {
-    border: 5px solid #8AE62E
-    
-    } 
+}
 
-#viides:hover {
-    box-shadow: 0 0 64px #8AE62E
+.moon-orbit {
+    /* For Section #2 */
+    position: absolute;
+    top: 45%;
+    left: 15%;
+
+    width: 50px;
+    height: 50px;
+    margin-top: -70px;
+    margin-left: -100px;
+
+    border-width: 2px;
+    border-style: dotted;
+    //border-color: white;
+    border-radius: 50%;
     
-    }
+     -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+.earth-orbit {
+    /* For Section #2 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+
+    border-width: 2px;
+    border-style: dotted;
+    //border-color: white;
+    border-radius: 50%;
     
-#one {
-    text-decoration: none;
-    color: black;
-    }    
-    
+     -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+
+// ANIMATIONS
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+          -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+ 
+
+

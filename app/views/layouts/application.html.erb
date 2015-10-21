@@ -3,14 +3,13 @@
 <head>
   <title>Portfolio</title>
   <%= csrf_meta_tags %>
- <%= stylesheet_link_tag    'application', params[:controller], media: 'all'%>
 
 
 </head>
 <body>
       <%= render 'partials/header'%>
-        <%= yield %>
-<%= render 'partials/footer'%> 
+	<%=yield%>
+      <%= render 'partials/footer'%> 
 
 
 </body>
@@ -18,5 +17,5 @@
 
 
 
-<%= javascript_include_tag 'application', params[:controller]%>
+
 </html>
